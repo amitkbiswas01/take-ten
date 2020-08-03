@@ -45,12 +45,12 @@ module.exports.start = () => {
           `npm install pm2 -g && pm2 start ${__dirname}/notify.js -- "${work}" "${gap}" "${set}" "${msg}"`
         );
       }
-      console.log("Timer Started!");
+      console.log("Scheduled Notification turned on!");
     })
     .catch(console.error());
 };
 
 module.exports.stop = async () => {
   await exec(`pm2 stop notify`);
-  console.log("Timer Stopped!");
+  console.log("Scheduled Notification turned off!");
 };

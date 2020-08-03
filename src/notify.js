@@ -1,6 +1,6 @@
 require("regenerator-runtime/runtime");
 
-const path = require("path");
+// const path = require("path");
 const notifier = require("node-notifier");
 
 const args = process.argv;
@@ -27,7 +27,7 @@ async function schedule(work, gap, set, message) {
     await doing(gap);
     notifier.notify({
       title: "Back to Work 😔",
-      message: `Time to go back!`,
+      message: `Time to go back. Good luck with the bugs!`,
     });
   }
 }
