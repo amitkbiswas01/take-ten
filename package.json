@@ -1,6 +1,6 @@
 {
   "name": "take-ten",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js CLI based timer to schedule breaks and send push notification",
   "main": "lib/index.js",
   "bin": {
@@ -29,14 +29,13 @@
     "chalk": "^4.1.0",
     "commander": "^6.0.0",
     "inquirer": "^7.3.3",
-    "node-cron": "^2.0.3",
-    "node-notifier": "^7.0.2"
+    "node-notifier": "^7.0.2",
+    "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.0",
     "@babel/node": "^7.10.5",
-    "@babel/preset-env": "^7.11.0",
-    "regenerator-runtime": "^0.13.7"
+    "@babel/preset-env": "^7.11.0"
   }
 }
