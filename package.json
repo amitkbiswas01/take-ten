@@ -1,0 +1,32 @@
+{
+  "name": "take-ten",
+  "version": "1.0.0",
+  "description": "Node.js CLI based timer to schedule breaks and send push notification",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./lib",
+    "start": "node lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitkbiswas0/take-ten.git"
+  },
+  "keywords": [
+    "nodejs",
+    "cli",
+    "timer"
+  ],
+  "author": "Amit Biswas <amit.biswas6991@gmail.com> (amitb.xyz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amitkbiswas0/take-ten/issues"
+  },
+  "homepage": "https://github.com/amitkbiswas0/take-ten#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.0.0",
+    "inquirer": "^7.3.3",
+    "node-cron": "^2.0.3",
+    "node-notifier": "^7.0.2"
+  }
+}
