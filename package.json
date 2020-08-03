@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Node.js CLI based timer to schedule breaks and send push notification",
   "main": "lib/index.js",
+  "bin": {
+    "take-ten": "lib/index.js"
+  },
   "scripts": {
     "build": "babel ./src --out-dir ./lib",
-    "start": "node lib/index.js"
+    "start": "npm run build && node lib/index.js start"
   },
   "repository": {
     "type": "git",
@@ -28,5 +31,12 @@
     "inquirer": "^7.3.3",
     "node-cron": "^2.0.3",
     "node-notifier": "^7.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "regenerator-runtime": "^0.13.7"
   }
 }
