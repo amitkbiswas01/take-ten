@@ -53,13 +53,13 @@ after starting , user will be prompted as below,
     20 Minutes
 ```
 
-3. Enter how many cycles of work-break set wll be needed. _**default: 2**_
+3. Enter how many cycles of work-break set wll be needed. If something other than number is added, defaults to 2. _**default: 2**_
 
 ```bash
 ?   Enter Number of Work-Break Sets :  (2)
 ```
 
-4. Any custom message to remind that break-time has began! _**Get up and Drink Water!**_
+4. Any custom message to remind that break-time has began! _**default: Get up and Drink Water!**_
 
 ```bash
 ?   Enter a notification message :  (Get up and Drink Water!)
@@ -67,15 +67,30 @@ after starting , user will be prompted as below,
 
 ## **To be noted :**
 
-Remember to run the _stop_ command after you're done otherwise a small _pm2_ process will keep running in the background. Also you can monitor/edit/stop the app directly using _pm2_. For that, run `pm2 ls` and look for the process named `notify`. That process can treated as a normal _pm2_ process.
+The app can be monitored/edited/stopped directly using _pm2_. For that, run `pm2 ls` and look for the process named `notify`. That process can be treated as a normal _pm2_ process.
 
 ## **Issues :**
 
-- None that I know of. The app is very simple and straightforward at this stage. I have never developed anything publishable till now and am very new to JS altogether. so if there is a problem, There is a high chance might have missed that! Please open an issue or pull to fix any problem 😊
+- None that I know of till @1.1.0 . The app is very simple and straightforward at this stage. I am very new to JS and in app development altogether! so if there are any problems; I might have missed it! Please open an issue or submit pull request to fix/look into any problem 😊
 
-## **Upcoming features :**
+## **Changelog**
 
-- automatic stop process \*\*
-- custom work and break time \*\*
-- adding notification sound \*
-- option to add image and title to the notification \*
+### **1.1.0@ _04.08.2020_**
+
+- #### **Added :**
+
+1. Automated stop process. The notifier daemon will stop after all sets are complete. Will give a notification after stopping.
+2. A cute dog picture will show as a notification picture showing you thumbs up for your hard-work!
+3. Colored inputs and console messages.
+
+- #### **Fixed :**
+
+1. Input glitch that showed the first input prompt twice.
+2. Fallback value to set when entering anything other than number.
+3. Error Handling.
+
+## **Upcoming Features :**
+
+- [ ] Custom work and break time \*\*
+- [ ] Notification sound \*
+- [ ] Option to customize image, title and sound of the notification \*

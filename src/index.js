@@ -2,7 +2,8 @@
 
 require("regenerator-runtime/runtime");
 
-const program = require("commander");
+const com = require("commander");
+const program = new com.Command();
 
 const pkg = require("../package.json");
 const { start, stop } = require("./input");
@@ -11,10 +12,14 @@ program
   .version(pkg.version)
   .command("start")
   .description("START background process for push-notification")
-  .action(start);
+  .action(() => {
+    start();
+  });
 program
   .command("stop")
   .description("STOP background process for push-notification")
-  .action(stop);
+  .action(() => {
+    stop();
+  });
 
 program.parse(process.argv);
