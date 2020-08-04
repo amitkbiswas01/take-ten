@@ -1,6 +1,6 @@
 {
   "name": "take-ten",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Node.js CLI based timer to schedule breaks and send push notification",
   "main": "lib/index.js",
   "bin": {
