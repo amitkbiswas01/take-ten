@@ -71,19 +71,19 @@ The app can be monitored/edited/stopped directly using _pm2_. For that, run `pm2
 
 ## **Issues :**
 
-- None that I know of till @1.1.0 . The app is very simple and straightforward at this stage. I am very new to JS and in app development altogether! so if there are any problems; I might have missed it! Please open an issue or submit pull request to fix/look into any problem 😊
+None that I know of till @1.1.0 . The app is very simple and straightforward at this stage. I am very new to JS and in app development altogether! so if there are any problems; I might have missed it! Please open an issue or submit pull request to fix/look into any problem 😊
 
 ## **Changelog**
 
 ### **1.1.0@ _04.08.2020_**
 
-- #### **Added :**
+#### **Added :**
 
 1. Automated stop process. The notifier daemon will stop after all sets are complete. Will give a notification after stopping.
 2. A cute dog picture will show as a notification picture showing you thumbs up for your hard-work!
 3. Colored inputs and console messages.
 
-- #### **Fixed :**
+#### **Fixed :**
 
 1. Input glitch that showed the first input prompt twice.
 2. Fallback value to set when entering anything other than number.
@@ -91,6 +91,6 @@ The app can be monitored/edited/stopped directly using _pm2_. For that, run `pm2
 
 ## **Upcoming Features :**
 
-- [ ] Custom work and break time \*\*
-- [ ] Notification sound \*
-- [ ] Option to customize image, title and sound of the notification \*
+[ ] Custom work and break time \*\*
+[ ] Notification sound \*
+[ ] Option to customize image, title and sound of the notification \*

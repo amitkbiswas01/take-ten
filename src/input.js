@@ -38,18 +38,15 @@ module.exports.start = () => {
       ])
       .then(async (answers) => {
         const { work, gap, set, msg } = answers;
-        const pm2Path = await exec("npm list -g pm2");
-        pm2Path.stdout.on("data", async (data) => {
-          if (!data.includes("pm2@")) {
-            await exec(`npm install pm2 -g`);
-          }
+        const pm2Exec = await exec(
+          `npm install pm2 -g && pm2 start ${__dirname}/notify.js -- "${work}" "${gap}" "${set}" "${msg}"`
+        );
+        console.log("\nInstalling and/or Setting up PM2 .....");
+        pm2Exec.on("exit", () => {
+          console.log(
+            chalk.bgGreen.white.bold("\nScheduled Notification turned on!")
+          );
         });
-        await exec(
-          `pm2 start ${__dirname}/notify.js -- "${work}" "${gap}" "${set}" "${msg}"`
-        );
-        console.log(
-          chalk.bgGreen.white.bold("\nScheduled Notification turned on!")
-        );
       });
   } catch (err) {
     console.log(chalk.bgRed.white.bold("Error Occurred!"));
