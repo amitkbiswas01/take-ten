@@ -91,6 +91,6 @@ None that I know of till @1.1.0 . The app is very simple and straightforward at 
 
 ## **Upcoming Features :**
 
-[ ] Custom work and break time \*\*
-[ ] Notification sound \*
-[ ] Option to customize image, title and sound of the notification \*
+- Custom work and break time \*\*
+- Notification sound \*
+- Option to customize image, title and sound of the notification \*
