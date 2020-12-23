@@ -30,7 +30,7 @@
     "chalk": "^4.1.0",
     "commander": "^6.0.0",
     "inquirer": "^7.3.3",
-    "node-notifier": "^7.0.2",
+    "node-notifier": "^8.0.1",
     "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
